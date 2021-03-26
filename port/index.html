@@ -17,25 +17,22 @@
  
 
     
-    <style>
-        body{margin: 0 auto; padding: 0;/*overflow-y: hidden;*/ overflow-x: hidden; font-family: 'Roboto', sans-serif; }
+  <style>
+        body{margin: 0 auto; padding: 0; font-family: 'Roboto', sans-serif; width:100%; }
         a{text-decoration: none;}
         ul li{list-style: none;}
         
         
-       .wrap{ width:100%; height: 100%; overflow-x:hidden; margin: 0 auto!important;
-
-        }
-       
+       .wrap{position:absolute; display:block; width:100%; height: 100%; }
+    
        .section1{position: relative; display: flex; width:100%; height:1350px; justify-content: center; align-items:
-       center; margin: 0 auto;}
+       center;overflow-x:hidden;   overflow-y: hidden;}
        .section1::after{content:""; width:100%; height: 100%; background:url(images/walling-DU3bnkBY1N8-unsplash.jpg);
        background-size:cover ; background-position-y:60% ; opacity: 0.7; position: absolute; top:0; left:0; display: block; z-index: -1;position:
        fixed;}
        
-       .web{position:absolute; bottom:40%; left:19%; font-size: 2em; color:#fff; font-weight: bold;font-family: 'Roboto', sans-serif; line-height: 35px;}
-       .web::after{content:''; display: block; border:1px #fff solid; width:100px; position:absolute; right:-70px; bottom:10%;   }
-       .web::before{content:'WEB PORTFOLIO '; display: block; position: absolute; left:280%; bottom: 0%; text-align: right;}
+       .web{position:absolute; bottom:40%; left:19%; font-size: 2em; color:#fff; font-weight: bold;font-family: 'Roboto', sans-serif; line-height: 35px; width:63%;}
+       .web::before{content:'WEB PORTFOLIO '; display: block; position: absolute; left:79%; bottom: 0%; text-align: right;  width:250px;}
        .web.active{opacity:1;bottom:44%; -webkit-transition: all 1s ease;}
         .ican{width:100%; height:400px; display: block; background:url(images/sec5.png); background-size: cover; position:absolute; bottom:0%; }
         .ican ul{display: flex; width:45%; height:10%;justify-content: space-around; margin: 0 auto; align-content: center; color:#fff;}
@@ -44,18 +41,18 @@
         .ican ul li p{font-size:20px;  text-align: center; font-weight: bolder; color:#fff}
         .fa-js p {position: relative; left:-40px}
         .ican>p {color: #fff; font-size: 3em; text-align: center; position:relative; top:-0px;}
-       .section2{width:100%; height:800px; background:transparent; display: block; margin:0 auto}
-       .section2::after{content: ''; display: block; width:100%; height:400px; background-color: #fff; position:relative; bottom:150px; box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3), 2px 4px 6px rgba(0, 0, 0, 0.2); }
+       .section2{width:100%; height:800px; background:transparent; display: block;overflow-x:hidden;  overflow-y:hidden;}
+       .section2::after{content: ''; display: block; width:100%; height:50%; background-color: #fff; position:relative; bottom:150px; box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3), 2px 4px 6px rgba(0, 0, 0, 0.2); }
        .section2 p{position:relative;  }
        .tcolor1 {color:rgba(0,0,0,0.8)!important;  display: block; top:-25px; }
        .ttop{position: relative; bottom:-35%; left:19%; opacity:0.8;
-         display: block; width:250px; height:150px; font-size: 2em; color:rgba(0,0,0,0.8); font-weight: bold;font-family: 'Roboto', sans-serif; line-height: 35px; z-index: 8;}
-       .ttop::after{content:'Everyday creative Design'; display:block; width:100%; position:absolute; font-size: 18px; left:280%; top:42px;}
+         display: block; width:63%; height:150px; font-size: 2em; color:rgba(0,0,0,0.8); font-weight: bold;font-family: 'Roboto', sans-serif; line-height: 35px; z-index: 8;}
+       .ttop::after{content:'Everyday creative Design'; display:block; width:100%; position:absolute; font-size: 18px; left:79%; top:42px;}
          .ttop.active{opacity:1;bottom:-31%; -webkit-transition: all 1s ease;}
        
-       .season{padding:0; display: flex; justify-content: space-around; position: relative; height:350px; top:250px; width:70%; margin: 0 auto; z-index: 6!important; }
+       .season{padding:0; display: flex;  flex-wrap: nowrap; justify-content: space-around; position: relative; top:20%; width:70vw; margin: 0 auto; z-index: 6!important; }
        .season span{display: block; position:absolute; width:300px; height:280px;  left:-40px; top:-50px; background-color: ; z-index:-1}
-       .season li{ width:300px; height:300px; margin:0 10px; overflow: hidden;}
+       .season li{ width:300vw;  height:auto; margin:0 10px; overflow: hidden;}
        .season li img{transition: 0.5s; opacity: 1; width:100%; height:100%;}
        .season li img:hover{transform: scale(1.2); transition: 0.5s; opacity: 1;}
        .season li p {font-family: 'Roboto', sans-serif; color:#fff; margin:0 auto; font-size: 28px; position: relative; text-align: center;
@@ -64,8 +61,8 @@
 
 
 
-       .section3{padding:0; margin:0; display: block; width:100%; height:2600px; background: rgb(238, 233,
-       233);border:1px transparent solid; position: absolute; }
+       .section3{padding:0; margin:0; display: block; width:100%; height:3200px; background: rgb(238, 233,
+       233);border:1px transparent solid; position: absolute; overflow-x:hidden; overflow-y: hidden;}
 
        table{position:relative; top:-40%; width:1000px; margin:0 auto; height:auto; border-spacing: 20px; padding:0;}
        table tr td{ width:280px; height:280px; padding:none; margin:none; overflow: hidden;}
@@ -74,7 +71,7 @@
        td img:hover{transition:1s; opacity:0.5; transform: rotate3d(1, -1, 0, 70deg); border-radius: 50%;}
        .obj1:hover{transform:none!important; border-radius:0% !important; opacity:1;}
        .obj2{display: block; position: relative; top:5%; left:10%;}
-       .colorbox{width:1000px; height:500px; background-color: rgb(46, 46, 255); display: block; position: relative;
+       .colorbox{width:55%; height:1000px; background-color: rgb(46, 46, 255); display: block; position: relative;
        top:-10%; left:45%;}
        .colortext{display: block; z-index: 10; position: relative; top:-35%; color:rgb(24, 24, 24); font-size: 2em;
        font-weight: bold; margin:0 auto; text-align: center;}
@@ -82,14 +79,14 @@
        left:10px;}
        .colorbox::after{content:''; border-left:5px #fff solid; display: block; height:700px; position:relative;
        left:73%; top:25%}
-       .sectext1{position: relative; top:0%; right:-70%; opacity:0.8;
-       display: block; width:400px; height:150px; font-size: 2em; color: #fff; font-weight: bold;font-family: 'Roboto',
+       .sectext1{position: relative; top:0%; right:0%; opacity:0.8;
+       display: block; width:90%; height:150px; font-size: 2em; color: #fff; font-weight: bold;font-family: 'Roboto',
        sans-serif; line-height: 35px; z-index: 9; text-align: right;}
        .sectext2{font-size: 18px; color:rgb(24, 24, 24); font-weight: normal;}
 
 
 
-        .section4{padding:0; margin:0; display: block; width:100%; height:600px; background: #fff;  z-index: 111; position: relative; top:2600px;}
+        .section4{padding:0; margin:0; display: block; width:100%; height:600px; background: #fff;  z-index: 111; position: relative; top:-770px;overflow-x:hidden;  overflow-y: hidden;}
         .my{display: block; height: 400px; width: 100%; border:1px transparent solid; background-image: url(images/sec4.png); background-size: cover;
         box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3), 2px 4px 6px rgba(0, 0, 0, 0.2);}
           .my>p{color: #fff; font-size: 3em; text-align: center; position:relative; top:-0px;}
@@ -101,6 +98,8 @@
           footer{position: relative; width:100%; height:200px;  top:60px; color: rgb(240, 240, 240); text-align: center; font-size: 2em; line-height: 200px; background:#0e0e0e}
         
 
+        
+        
     </style>
     
     <script>
@@ -212,12 +211,20 @@
 </script>
 
 
-
     </head>
 
     <body>
 
-      <nav class="navbar">
+     
+
+
+
+
+
+      <div class="wrap">
+
+       
+        <nav class="navbar">
 
         <div class="logo">
           <img src="images/logo.png" alt="logo">
@@ -228,16 +235,12 @@
           <li class="btn nav2"><a href="#"> Gallery No.1 </a></li>
           <li class="btn nav3"><a href="#"> Gallery No.2 </a></li>
         </ul>
-               </nav>
+      </nav>
 
-
-
-
-
-
-
-      <div class="wrap">
-
+       
+       
+       
+      
         <div class="section1">
           <div class="slider-area slider">
             <div class="items"><a href="web/hershe/index.html" target="blank_"><img src="images/web11.png" alt=""></a></div>
@@ -352,11 +355,7 @@
           <div class="colortext"> EVERYDAY CREATIVE COLORFUL DESIGN </div>
 
 
-
-         
-        </div>
-
-        <div class="section4">
+  <div class="section4">
           <div class="my">
             <p>WHAT CAN I DO</p>
             <div class="dlogo"></div>
@@ -369,16 +368,17 @@
               THANK U FOR WATCHING
             </footer>
           </div>
+        </div>
          
-
         </div>
 
+      
         
-
-
         
-
-      </div>
+        
+        
+        
+        </div>
         
   
 
