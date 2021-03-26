@@ -65,7 +65,7 @@
 
 
        .section3{padding:0; margin:0; display: block; width:100%; height:2600px; background: rgb(238, 233,
-       233);border:1px transparent solid; position: absolute; }
+       233);border:1px transparent solid; position: absolute; overflowX:hidden }
 
        table{position:relative; top:-40%; width:1000px; margin:0 auto; height:auto; border-spacing: 20px; padding:0;}
        table tr td{ width:280px; height:280px; padding:none; margin:none; overflow: hidden;}
@@ -379,8 +379,21 @@
         
 
       </div>
+        
+        @media all and (max-width:1000px){
+.wrap{width:100%; margin:0 auto; border:1px red solid}
+        
+
+}
+        
 
  @media all and (max-width:800px){
+.wrap{width:100%; margin:0 auto; border:1px red solid}
+        
+
+}
+        
+        @media all and (max-width:500px){
 .wrap{width:100%; margin:0 auto; border:1px red solid}
         
 
